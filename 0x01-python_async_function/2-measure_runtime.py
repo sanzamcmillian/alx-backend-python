@@ -9,4 +9,4 @@ def measure_time(n: int, max_delay: int) -> float:
     """calculates the time it takes for wait_n to execute"""
     hold_time = time.time()
     asyncio.run(wait_n(n, max_delay))
-    return (time.time() - hold_time / n)
+    return (time.time() - hold_time) / n
